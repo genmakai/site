@@ -2,12 +2,114 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>幻マ会</title>
   <link rel="stylesheet" href="css/app.css">
   <script src="./js/app.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7G4ZLHWBJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y7G4ZLHWBJ');
+  </script>
 </head>
 <body>
-  <p>test</p>
-  <p>test</p>
+  <div class="wrapper">
+    <header class="header">
+      <div class="hero">
+        <img class="hero__image hero__image--pc" src="./img/main.png" alt="">
+        <img class="hero__image hero__image--sp" src="./img/main_sp.png" alt="">
+      </div>
+    </header>
+    <div class="content">
+      <h1 class="title">Games</h1>
+      <section>
+        <div class="game">
+          <div class="game__image">
+            <img src="./img/game1.png" alt="">
+          </div>
+          <div class="game__description">
+            <p class="game__catch">伊賀忍者影丸くんとなって、甲賀忍者に盗まれた秘術の巻物を取り戻せ。</p>
+            <p>横スクロール、縦スクロールのステージを駆け抜ける２Dアクションゲーム。</p>
+          </div>
+        </div>
+        <div class="gameInfo">
+          <p class="gameInfo__text">現在、鋭意開発中！！<br>コミティア137（9/20 開催）から遊べます。<br>会場内 [き22a] にて出店予定。</p>
+        </div>
+        <div class="stage">
+          <div class="stage__item">
+            <div class="card">
+              <h2 class="card__title">Stage1</h2>
+              <div class="card__image">
+                <img src="./img/stage1.png" alt="">
+              </div>
+              <div class="card__description">
+                <p>襲ってくる妖怪を倒して進む横スクロールアクション</p>
+              </div>
+            </div>
+          </div>
+          <div class="stage__item">
+            <div class="card">
+              <h2 class="card__title">Stage2</h2>
+              <div class="card__image">
+                <img src="./img/stage2.png" alt="">
+              </div>
+              <div class="card__description">森に仕掛けられた罠を潜り抜ける縦スクロールアクション</div>
+            </div>
+          </div>
+          <div class="stage__item">
+            <div class="card">
+              <h2 class="card__title">Stage3</h2>
+              <div class="card__image">
+                <img src="./img/stage3.png" alt="">
+              </div>
+              <div class="card__description">ついに見つけた！甲賀忍者に追いつき捕まえる横スクロールアクション</div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="sealed">
+          <h3 class="sealed__title">３つの巻物に記された印を入力</h3>
+          <div class="sealed__word">
+            <input class="sealed__input" type="text" name="sealed" id="sealed">
+            <button class="sealed__button" id="recite">唱える</button>
+          </div>
+          <div class="sealed__notice">反応がない...ただの巻物のようだ</div>
+          <div class="sealed__notice">巻物が輝きだした...！</div>
+        </div> -->
+      </section>
+      <section>
+        <h2 class="title">About Au</h2>
+        <div class="aboutUs">
+          <div class="aboutUs__description">
+            <p>幻マ会は、プログラミングを楽しみながらゲームを制作し、スキルアップも目指す同人サークルです。<br>
+現在はJavaScriptでブラウザゲームを制作中。<br>
+主にコミティアに参加しています。</p>
+            <div class="history">
+              <div class="history__title">[活動履歴]</div>
+              <ul class="history__list">
+                <li class="history__item">
+                  <span class="history__date">2017年11月23日</span>
+                  <span class="history__text">COMITIA122参加</span>
+                </li>
+                <li class="history__item">
+                  <span class="history__date">2018年08月19日</span>
+                  <span class="history__text">COMITIA125参加</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="aboutUs__image">
+            <img src="./img/about1.png" alt="">
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <small>&copy; 2021 genmakai</small>
+    </footer>
+  </div>
 </body>
 </html>
