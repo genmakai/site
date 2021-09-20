@@ -2,10 +2,10 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>幻マ会</title>
+  <title>幻マ会 | ゲーム制作同人サークル</title>
+  <meta name="description" content="幻マ会は、プログラミングを楽しみながらゲームを制作し、スキルアップも目指す同人サークルです。">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="./css/app.css">
-  <script src="./js/app.js"></script>
+  <link rel="stylesheet" href="css/app.css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7G4ZLHWBJ"></script>
@@ -18,7 +18,7 @@
   </script>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="wrapper" id="wrapper">
     <header class="header">
       <div class="hero">
         <img class="hero__image hero__image--pc" src="./img/main.png" alt="">
@@ -38,48 +38,49 @@
           </div>
         </div>
         <div class="gameInfo">
-          <p class="gameInfo__text">現在、鋭意開発中！！<br>コミティア137（9/20 開催）から遊べます。<br>会場内 [き22a] にて出店予定。</p>
+          <p class="gameInfo__text">各ステージをクリアして、３つの巻物を取り戻せ！<br>
+（ステージをクリックすると遊べます）</p>
         </div>
         <div class="stage">
           <div class="stage__item">
-            <div class="card">
-              <h2 class="card__title">Stage1</h2>
+            <a class="card" href="./stage01/index.html">
+              <h2 class="card__title">ステージ1</h2>
               <div class="card__image">
                 <img src="./img/stage1.png" alt="">
               </div>
               <div class="card__description">
                 <p>襲ってくる妖怪を倒して進む横スクロールアクション</p>
               </div>
-            </div>
+            </a>
           </div>
           <div class="stage__item">
-            <div class="card">
-              <h2 class="card__title">Stage2</h2>
+            <a class="card" href="./stage02/runner_3d.html">
+              <h2 class="card__title">ステージ2</h2>
               <div class="card__image">
                 <img src="./img/stage2.png" alt="">
               </div>
               <div class="card__description">森に仕掛けられた罠を潜り抜ける縦スクロールアクション</div>
-            </div>
+            </a>
           </div>
           <div class="stage__item">
-            <div class="card">
-              <h2 class="card__title">Stage3</h2>
+            <a class="card" href="./stage03/index.html">
+              <h2 class="card__title">ステージ3</h2>
               <div class="card__image">
                 <img src="./img/stage3.png" alt="">
               </div>
               <div class="card__description">ついに見つけた！甲賀忍者に追いつき捕まえる横スクロールアクション</div>
-            </div>
+            </a>
           </div>
         </div>
-        <!-- <div class="sealed">
+        <div class="sealed">
           <h3 class="sealed__title">３つの巻物に記された印を入力</h3>
           <div class="sealed__word">
             <input class="sealed__input" type="text" name="sealed" id="sealed">
             <button class="sealed__button" id="recite">唱える</button>
           </div>
-          <div class="sealed__notice">反応がない...ただの巻物のようだ</div>
-          <div class="sealed__notice">巻物が輝きだした...！</div>
-        </div> -->
+          <div class="sealed__flash">※ フラッシュの点滅にご注意下さい</div>
+          <div class="sealed__notice" id="notice"></div>
+        </div>
       </section>
       <section>
         <h2 class="title">About Us</h2>
@@ -112,5 +113,6 @@
       <small>&copy; 2021 genmakai</small>
     </footer>
   </div>
+  <script src="./js/app.js"></script>
 </body>
 </html>
